@@ -1,0 +1,41 @@
+{
+    "name": "minstrel/api-client",
+    "description": "PHP client for the Minstrel public API (v1), generated from docs/openapi/v1.json.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/solorzanorafaelandre/minstrel-api-client",
+    "keywords": [
+        "minstrel",
+        "api",
+        "client",
+        "banquet",
+        "beo"
+    ],
+    "support": {
+        "source": "https://github.com/solorzanorafaelandre/minstrel-api-client"
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Minstrel\\ApiClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Minstrel\\ApiClient\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
